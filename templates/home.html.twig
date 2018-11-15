@@ -1,2 +1,5 @@
-<link rel="stylesheet" href="{{ asset('css/app.css') }}">
-Hello
+{% include 'layout.html.twig' %}
+
+{% block body %}
+    <h1>{{ 'home.title' | trans }}</h1>
+{% endblock %}
